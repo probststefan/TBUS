@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 	</head>
-	<body>
+	<body onload="autoRefresh(60000)">
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
@@ -28,6 +28,11 @@
 							<div class="alert alert-info">
 								Zur Zeit fahren keine Busse an dieser Stra&szlig;e.
 							</div>
+						<?php else : ?>
+							<p>
+					  			<button class="btn btn-small btn-primary" type="button" onclick="reload()">aktualisieren</button>
+					  			<?= $_GET["street"] ?> 
+							</p>
 						<?php endif; ?>
 						
 						<?php foreach ($aData as $aBus) : ?>
@@ -55,6 +60,7 @@
 						<?php endforeach; ?>
 					<?php endif; ?>
 				</div>
+		
 			</div>
 		</div>
 		
@@ -67,5 +73,19 @@
 			</a>
 		</div>
 		<script src="js/fct.js"></script>
+		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-28851709-2']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
 	</body>
 </html>
