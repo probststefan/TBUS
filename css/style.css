@@ -1,12 +1,24 @@
 .bus {
 	margin-bottom: 5px;
-	font-size: 2em;
+	#font-size: 2em;
 }
 
 .line {
 	font-weight: bold;
 }
 
-select.station {
+select.street {
 	width: 100%;
+}
+
+.footer {
+	text-align: center;
+	padding: 30px 0;
+	margin-top: 70px;
+	border-top: 1px solid #E5E5E5;
+	background-color: whiteSmoke;
+}
+
+.footer p {
+	color: #777;
 }
