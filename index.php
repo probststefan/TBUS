@@ -4,6 +4,7 @@
 <html lang="de">
 	<head>
     	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<title>BUS Trier</title>
 		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
@@ -64,13 +65,13 @@
 			</div>
 		</div>
 		
-		<div class=" footer">
+		<div class="footer">
+			<a href="https://github.com/coolieprobst/TBUS"><img src="img/github-icon.jpg" title="TBUS auf GitHub" alt="GitHub" width="30px" /></a>
+			<img src="http://probststefan.de/public/themes/wolf/images/logo.png" width="30px" />
+			
 			<p>
 				&copy 2013 Stefan Probst · <a href="mailto:probststefan@gmail.com">probststefan@gmail.com</a>
 			</p>
-			<a href="https://github.com/coolieprobst/TBUS">
-				<img src="img/github-icon.jpg" title="TBUS auf GitHub" alt="GitHub" width="30px" />
-			</a>
 		</div>
 		<script src="js/fct.js"></script>
 		
